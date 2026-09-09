@@ -34,7 +34,7 @@ const perguntas = [
             {
                 texto:"Utilizar uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento",
                 afirmacao:[
-                  
+                  "Voce acredita que as ferramentas de busca utilizando IA facilitam a aprendizagem",
                 ]
             },
             {
