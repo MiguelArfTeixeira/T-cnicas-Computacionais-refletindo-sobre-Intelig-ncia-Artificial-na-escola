@@ -44,13 +44,18 @@ function respostaSelecionada(opcaoSelecionada){
 function mostraResultado(){
     caixaPerguntas.textContent = "Em 2049...";
     textoResultado.textContent = historiaFinal;
-    caixaAlternativas.textContent = ""; 
+    caixaAlternativas.textContent = "";
+    caixaResultado.classlist.add(mostrar);
+    
+    
+    botaoJogarNovamente.addEventListener("click" , jogaNovamente);
 }
 
 function jogarNovamente(){
     atual=0;
     historiaFinal=""
     mostraPergunta();
+    caixaResultado.classlist.remove(mostrar);
 }
     
 
