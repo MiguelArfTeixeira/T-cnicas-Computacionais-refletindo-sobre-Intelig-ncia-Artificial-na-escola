@@ -42,7 +42,7 @@ function respostaSelecionada(opcaoSelecionada){
 }
 
 function mostraResultado(){
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = `Em 2049 ${nome}`;
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
     caixaResultado.classlist.add(mostrar);
@@ -57,6 +57,11 @@ function jogarNovamente(){
     mostraPergunta();
     caixaResultado.classlist.remove(mostrar);
 }
+    function substituiNome(){
+        for (const pergunta of perguntas) {
+            pergunta.enunciado=pergunta.enunciado.replace(/você/g,nome)
+        }
+    }
     
-
+substituiNome()
 mostraPergunta();
