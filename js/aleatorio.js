@@ -5,6 +5,6 @@ export function aleatorio (lista){
 }
 
 
-export const nomes= aleatorio(nomes);
+export const nome= aleatorio(nomes);
 
 export { nomes }
